@@ -24,7 +24,7 @@ a, button, label {
   font-weight: bold;
 }
 a, button, input:hover, label {
-  color: #be1622;
+  color: #1877b7;
   cursor: pointer;
   text-decoration: none;
 }
@@ -41,7 +41,7 @@ a, button, input:hover, label {
   font-style: italic;
 }
 a:hover {
-  color: #be1622;
+  color: #1877b7;
   text-decoration: underline;
 }
 
@@ -71,7 +71,7 @@ label:after {
 
 header h1 {
   margin: .3em 0 .1em;
-  font-size: 1.95em;
+  font-size: 1.85em;
 }
 header p {
   font-weight: bold;
@@ -85,7 +85,6 @@ header .logo {
 }
 header img {
   margin: -9px -11px 0 0;
-  height: 81px;
 }
 
 main {
@@ -193,13 +192,13 @@ textarea {
   width: calc(100% - 2px);
 }
 .result dl {
-  border: 1px solid #be1622;
+  border: 1px solid #1877b7;
   margin: 0 0 1em;
   border-radius: 5px;
 }
 .result dl:hover {
   color: white;
-  background-color: #be1622;
+  background-color: #1877b7;
 }
 .result dl:after {
   content: "";
@@ -209,7 +208,7 @@ textarea {
 .result dt {
   float: left;
   clear: left;
-  background-color: #be1622;
+  background-color: #1877b7;
   color: white;
   font-style: normal;
   font-weight: bold;
@@ -532,7 +531,7 @@ li.query-type-graphql {
   background-image: url('../images/graphql.svg');
 }
 li.highlighted {
-  background-color: #be1622;
+  background-color: #1877b7;
   color: #fff !important;
 }
 li.no-results {

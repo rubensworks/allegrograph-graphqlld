@@ -21,7 +21,7 @@ module.exports = [
       './images/logo.svg',
       './images/settings.svg',
       './images/sparql.png',
-      './favicon.ico',
+      './favicon.png',
       './queries.json',
     ],
     output: {
