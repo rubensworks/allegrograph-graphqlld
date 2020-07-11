@@ -1,0 +1,16 @@
+# 10. First 100 drugs with "aspir" in the name
+# Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
+{
+  match(_: "aspir*")
+  label(first:100) @single
+}
+
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+
+    "fti": "http://franz.com/ns/allegrograph/2.2/textindex/",
+    "match": "fti:match"
+  }
+}

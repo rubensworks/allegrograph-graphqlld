@@ -1,0 +1,10 @@
+# 11. First 100 drugs with "aspir" in the name
+# Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fti: <http://franz.com/ns/allegrograph/2.2/textindex/>
+
+SELECT ?label WHERE {
+  ?b1 fti:match "aspir*"^^xsd:string.
+  ?b1 rdfs:label ?label.
+} LIMIT 100

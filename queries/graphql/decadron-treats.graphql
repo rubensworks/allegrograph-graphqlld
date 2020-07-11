@@ -1,0 +1,18 @@
+# 30. All diseases that are treated by Decadron
+# Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
+query @single {
+  label(_:"Decadron (Tablet)")
+  treats @single {
+    disease: label
+  }
+}
+
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+
+    "diseasome": "http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/",
+    "treats": { "@reverse": "diseasome:possibleDrug" }
+  }
+}

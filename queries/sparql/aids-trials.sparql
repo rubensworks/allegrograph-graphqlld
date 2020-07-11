@@ -1,0 +1,14 @@
+# 41. All drugs in trials about AIDS
+# Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fr: <http://www.franz.com/>
+
+SELECT ?trial ?trialTitle ?discussesDrug_drug WHERE {
+  ?b1 rdfs:label ?trial;
+    fr:briefTitle ?trialTitle;
+    fr:discusses-drug ?discussesDrug.
+  ?discussesDrug rdfs:label ?discussesDrug_drug.
+  ?b1 fr:discusses-diseases ?discussesDiseases.
+  ?discussesDiseases rdfs:label "AIDS"^^xsd:string.
+}

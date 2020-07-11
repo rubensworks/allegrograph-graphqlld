@@ -1,0 +1,25 @@
+# 40. All drugs in trials about AIDS
+# Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
+query {
+  trial: label @single
+  trialTitle: briefTitle @single
+  discussesDrug {
+    drug: label @single
+  }
+  discussesDiseases {
+    label(_:"AIDS")
+  }
+}
+
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+
+    "@vocab": "http://www.franz.com/",
+    "discussesDrug": "discusses-drug",
+    "discussesDiseases": "discusses-diseases",
+	
+	"briefTitle": "http://data.linkedct.org/resource/linkedct/brief_title"
+  }
+}

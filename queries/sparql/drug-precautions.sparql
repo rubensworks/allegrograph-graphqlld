@@ -1,0 +1,13 @@
+# 21. Precautions for all drugs for AIDS
+# Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX diseasome: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/>
+PREFIX dailymed: <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/>
+
+SELECT ?possibleDrug_drug ?possibleDrug_precaution WHERE {
+  ?b1 rdfs:label "AIDS"^^xsd:string;
+    diseasome:possibleDrug ?possibleDrug.
+  ?possibleDrug rdfs:label ?possibleDrug_drug;
+    dailymed:precaution ?possibleDrug_precaution.
+}
