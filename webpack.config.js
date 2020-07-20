@@ -18,7 +18,7 @@ module.exports = [
       './images/chosen-sprite.png',
       './images/chosen-sprite@2x.png',
       './images/graphql.svg',
-      './images/logo.svg',
+      './images/logo.png',
       './images/settings.svg',
       './images/sparql.png',
       './favicon.png',
