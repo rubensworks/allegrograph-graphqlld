@@ -1,5 +1,5 @@
 # GraphQL-LD for AllegroGraph
-[![Build Status](https://travis-ci.org/comunica/jQuery-Widget.js.svg?branch=master)](https://travis-ci.org/comunica/jQuery-Widget.js)
+[![Build Status](https://travis-ci.org/rubensworks/allegrograph-graphqlld.svg?branch=master)](https://travis-ci.org/rubensworks/allegrograph-graphqlld)
 
 **[Try the _Web client_ live.](https://rubensworks.github.io/allegrograph-graphqlld/)**
 
