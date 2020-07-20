@@ -1,7 +1,7 @@
-# 10. First 100 drugs with "aspir" in the name
+# 20. First 100 drugs with "aspir* cancer" in the name
 # Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
 {
-  match(_: "aspir*")
+  match(_: "aspir* cancer")
   label(first:100) @single
 }
 

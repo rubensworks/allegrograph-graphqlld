@@ -1,4 +1,4 @@
-# 20. Precautions for all drugs for AIDS
+# 10. Precautions for all drugs for AIDS
 # Datasources: sparql@https://flux.franz.com:10000/catalogs/demos/repositories/healthcare/sparql
 query @single {
   label(_:"AIDS")
